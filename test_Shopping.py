@@ -26,7 +26,7 @@ class Test_Part2:
     def test_correct_single_amount(self):
         Shopping.stock = og_stock.copy()
         student = Shopping.buy_list(Shopping.shopping_list_B, Shopping.stock, Shopping.prices)
-        if len(student) > 1:
+        if type(student)==tuple or type(student)==list:
             assert student[0] == 96
         else:
             assert student == 96
@@ -37,7 +37,7 @@ class Test_Part2:
         amts = [36, 70, 77]
         for l,amt in zip(lists,amts):
             student = Shopping.buy_list(l, Shopping.stock, Shopping.prices)
-            if len(student) > 1:
+            if type(student)==tuple or type(student)==list:
                 assert student[0] == amt
             else:
                 assert student == amt
