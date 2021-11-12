@@ -1,4 +1,4 @@
-# Lab 19
+# Lab 10
 
 In this lab you'll be getting some practice with dictionaries! Full instructions are on the website.
 
